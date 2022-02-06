@@ -1,0 +1,23 @@
+function func1 param1 param2
+print (var param1)
+return (var param2)
+end_function
+
+function func2 param1
+declare var1
+assign var1 (string "var1 in func2")
+declare var2
+assign var2 (string "var2 in func2/return value for func1")
+declare res
+assign res (call func1 var1 var2)
+print (var res)
+return (string "Return value from func2")
+end_function
+
+function main
+print (string "Printed 1st")
+declare var1
+print (var var1)
+assign var1 (call func2 var1)
+print (var var1)
+end_function
