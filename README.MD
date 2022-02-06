@@ -20,32 +20,32 @@ end_function
 ```
 2. Supported commands
    1. print: Print out the value on a line. Does not support printing directly from function call. Please assign the value to a function before printing.
-   ```aidl
+   ```
     print (string "<the string>")
     print (var <variable_name>)
     ```
    2. declare: Declare a new variable. The new variable has a default value
-   ```aidl
+   ```
    declare <variable_name>
    ```
    3. call: Call a function with parameters
-   ```aidl
+   ```
    call <function_name> <param_1> <param_2> ...
    ```
    4. assign: Assign a variable with a value. Either from an inputted string, variable, or return value of function
-   ```aidl
+   ```
    assign <variable_name> (string "<string>")
    assign <variable_name> (var <variable_name>)
    assign <variable_name> (call <function_name> <params>...)
    ```
 3. return: Returning out the value on a line. Does not support printing directly from function call. Please assign the value to a function before returning.
-   ```aidl
+   ```
    return (string "<the string>")
    return (var <variable_name>)
     ```
 
 A complete file is as follows:
-```aidl
+```
 function func1 param1 param2
 print (var param1)
 return (var param2)
