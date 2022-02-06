@@ -70,3 +70,5 @@ assign var1 (call func2 var1)
 print (var var1)
 end_function
 ```
+
+To compile the file, call the function `Compiler.compile(filePath)` using Java14 or higher.
