@@ -11,7 +11,7 @@ The languages created has the following rules:
 8. Can not access other namespaces.
 The syntax is as follows:
 
-
+Further guides are as follows:
 1. Declare a function
 ```
 function <function_name> <param_1> <param_2>
